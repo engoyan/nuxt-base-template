@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "lines": "find . -type f \\( -iname '*.js' -o -iname '*.ts' -o -iname '*.vue' \\) ! -path '*/node_modules/*' ! -path '*/.output/*' ! -path '*/nuxt-base/*' ! -path '*/.nuxt/*' ! -path '*/.vscode/*' | xargs cat | wc -l",
+    "words": "find . -type f \\( -iname '*.js' -o -iname '*.ts' -o -iname '*.vue' \\) ! -path '*/node_modules/*' ! -path '*/.output/*' ! -path '*/nuxt-base/*' ! -path '*/.nuxt/*' ! -path '*/.vscode/*' | xargs cat | wc -w"
   },
   "dependencies": {
     "nuxt": "^3.12.3",
