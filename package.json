@@ -14,9 +14,15 @@
   },
   "dependencies": {
     "nuxt": "^3.12.3",
-    "vue": "latest"
+    "vue": "^3.5.13",
+    "workbox-core": "^7.1.0",
+    "workbox-precaching": "^7.1.0",
+    "workbox-routing": "^7.1.0",
+    "workbox-strategies": "^7.1.0"
   },
   "devDependencies": {
+    "@vueuse/core": "^11.3.0",
+    "@vueuse/nuxt": "^11.3.0",
     "sass": "^1.77.8"
   }
 }
